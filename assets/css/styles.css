@@ -593,6 +593,14 @@ i.fa.fa-clock-o{
 }
 
 @media (max-width: 1200px) {
+  .side-button{
+    font-size: 15px;
+    padding: 3px 10px;
+  }
+  button.side-button.active{
+    font-size: 15px;
+    padding: 3px 10px;
+  }
   .menu li a {
     font-size: 14px;
   }
