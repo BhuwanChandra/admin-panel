@@ -451,12 +451,12 @@ i.fa.fa-clock-o{
 }
 
 .sm-icon{
-  font-size:24px;
-  color: #aaa;
+  font-size:20px;
+  color: #ccc;
 }
 
 .sm-icon:hover{
-  color: #777;
+  color: #888;
   cursor: pointer;
 }
 

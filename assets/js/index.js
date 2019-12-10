@@ -26,6 +26,12 @@ $(function () {
 
 });
 
+$(document).ready(function (){
+  if ($(window).width() < 768) {
+    $("#sidebar-collapse").collapse("hide");
+  }
+})
+
 function resize() {
   if ($(window).width() >= 768) {
     $("#sidebar-collapse").collapse("show");
