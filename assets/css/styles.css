@@ -1,9 +1,8 @@
 body,html{
   width: 100vw;
   margin: 0;
-  background: #eeeeee;
+  background: #f7f7f7;
   padding: 0;
-  padding-right: 20px;
   overflow-x: hidden;
 }
 
@@ -15,7 +14,7 @@ body,html{
 
 .sidebar {
   height: 100%;
-  background: #eeeeee;
+  background: #f7f7f7;
   transition: 0.4s;
   /* position: fixed; */
 }
@@ -69,16 +68,106 @@ body,html{
   margin: 0;
   width: 100%;
   display: block;
-  background: #ddd;
+  background: #eee;
 }
 
 .numbers{
   padding: 4px 8px;
   border-radius: 16px;
   background: #5fa3f1;
-  color: #eee;
+  color: #f7f7f7;
   font-size: 10px;
 }
+
+.side-button{
+  font-size: 16px;
+  color: #2dceff;
+  border: 1px solid #2dceff;
+  background: #fff;
+  padding: 5px 15px;
+}
+
+button.side-button.active{
+  font-size: 16px;
+  color: #fff;
+  background: #2dceff;
+  padding: 5px 15px;
+}
+
+/* Circular Progress Bar */
+
+.progress {
+  width: 150px;
+  height: 150px;
+  background: none;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 6px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 6px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-color: #2dceff;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-color: #2dceff;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+
+.progress .progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* / Circular Progress Bar */
 
 .row{
   margin: 0;
@@ -92,8 +181,6 @@ body,html{
 
 .navigation-clean-search {
   background: #fff;
-  /*padding-top: .75rem;*/
-  /*padding-bottom: .75rem;*/
   color: #333;
   border-radius: 0;
   box-shadow: none;
@@ -218,7 +305,7 @@ body,html{
 
 .slider {
   font-size: 14px;
-  color: #eee;
+  color: #f7f7f7;
   padding-top: 6px;
   padding-left: 6px;
   font-family: serif;
@@ -275,14 +362,14 @@ input:checked + .slider:before {
 
 .queue-row,.pinned-msg,.recent-msg,.new-applications,.comp-applications,.calender{
   border-radius: 5px;
-  background: #eee;
-  margin: 10px;
+  background: #f7f7f7;
+  margin: 15px;
   padding: 20px;
 }
 
 .fa.fa-arrow-down {
   background-color: #3f80ff;
-  color: #eee;
+  color: #f7f7f7;
   padding: 15px;
   border-radius: 50%;
 }
@@ -336,7 +423,7 @@ input:checked + .slider:before {
 
 .pie-chart i.fa-check {
   background-color: #3f80ff;
-  color: #eee;
+  color: #f7f7f7;
   padding: 18px;
   border-radius: 50%;
 }
@@ -344,21 +431,21 @@ input:checked + .slider:before {
 
 i.fa.fa-thumb-tack,i.fa.fa-comments{
   font-size: 24px;
-  color: #eee;
+  color: #f7f7f7;
   padding: 12px 15px;
   border-radius: 50%;
 }
 
 i.fa.fa-pie-chart {
   font-size: 24px;
-  color: #eee;
+  color: #f7f7f7;
   padding: 12px;
   border-radius: 50%;
 }
 
 i.fa.fa-clock-o{
   font-size: 24px;
-  color: #eee;
+  color: #f7f7f7;
   padding: 11px 12px;
   border-radius: 50%;
 }
@@ -485,10 +572,6 @@ i.fa.fa-clock-o{
   .menu li em,.menu li ul .fa{
     padding-right: 20px;
   }
-  .company .title{
-    font-size: 30px;
-    padding: 16px;
-  }
   .company-t .title{
     display: block;
   }
@@ -500,8 +583,13 @@ i.fa.fa-clock-o{
   }
 }
 
-@media (max-width: 992px) {
-  
+@media (min-width: 992px) {
+  .company-t .title{
+    display: none;
+  }
+  .company .title{
+    display: block;
+  }
 }
 
 @media (max-width: 1200px) {

@@ -55,12 +55,12 @@
         </div>
     </div>
     <div class="row main-content">
-        <!-- <div class="sidebar"> -->
-            <div id="sidebar-collapse" class="col-md-3 col-lg-2 sidebar" style="padding: 0;" id="sidebar" class="col-sm-3 col-lg-2 sidebar">
+        <div class="col-md-3 col-lg-2 sidebar expand-md">
+            <div id="sidebar-collapse" class="" style="padding: 0;">
                 <div class="company-t">
                     <div class="title">SKOOKUM</div>
                 </div>
-                <ul class="nav menu">
+                <ul class="nav menu mb-5">
                     <li class="nav-items-t">
                         <ul class="d-flex ml-3 mr-3 pr-3" style="align-items:center;background: transparent;">
                             <li class="nav-item" style="font-size:14px;color:#ccc;margin-top:20px;" role="presentation">
@@ -117,8 +117,30 @@
                             <span data-toggle="collapse" href="#sub-tools-1" class="icon pull-right"><em class="fa fa-angle-right"></em></span>
                         </a></li>  
                 </ul>
+                <div class="circular-section ml-3" style="margin-top:30%;">
+                    <button class="side-button active">Annual</button><button class="side-button">Month</button>
+                </div>
+                <div class="circular-progress mt-3">
+                    <!-- Progress bar 1 -->
+                    <div class="progress ml-3" data-value='55'>
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                            <div class="h1">55<sup class="small">%</sup></div>
+                        </div>
+                    </div>
+                    <!-- END -->
+                    <div class="bottom-text mt-3 ml-3">
+                        <i class="fa fa-circle mr-2" style="color: #3fc9ff;"></i>Annual Aplications Completed
+                    </div>
+
+                </div>
             </div>
-        <!-- </div> -->
+        </div>
         <div class="content col-md-9 col-lg-10 p-2">
             <!-- <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="padding: 5px;">
                 <div class="container">
@@ -219,65 +241,55 @@
                                             <hr class="hr">
                                         </div>
                                         <div class="col-md-12">
-                                            
-
-<div class="month">
-    <ul>
-        <li class="prev">&#10094;</li>
-        <li class="next">&#10095;</li>
-        <li>
-            October
-        </li>
-    </ul>
-</div>
-
-<ul class="weekdays">
-    <li>M</li>
-    <li>T</li>
-    <li>W</li>
-    <li>T</li>
-    <li>F</li>
-    <li>S</li>
-    <li>S</li>
-</ul>
-
-<ul class="days">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
-    <li>8</li>
-    <li>9</li>
-    <li>10</li>
-    <li>11</li>
-    <li>12</li>
-    <li>13</li>
-    <li>14</li>
-    <li>15</li>
-    <li>16</li>
-    <li>17</li>
-    <li>18</li>
-    <li>19</li>
-    <li>20</li>
-    <li>21</li>
-    <li>22</li>
-    <li>23</li>
-    <li>24</li>
-    <li>25</li>
-    <li>26</li>
-    <li>27</li>
-    <li>28</li>
-    <li>29</li>
-    <li>30</li>
-    <li>31</li>
-</ul>
-
-
-
-
+                                            <div class="month">
+                                                <ul>
+                                                    <li class="prev">&#10094;</li>
+                                                    <li class="next">&#10095;</li>
+                                                    <li>October</li>
+                                                </ul>
+                                            </div>
+                                            <ul class="weekdays">
+                                                <li>M</li>
+                                                <li>T</li>
+                                                <li>W</li>
+                                                <li>T</li>
+                                                <li>F</li>
+                                                <li>S</li>
+                                                <li>S</li>
+                                            </ul>
+                                            <ul class="days">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                                <li>10</li>
+                                                <li>11</li>
+                                                <li>12</li>
+                                                <li>13</li>
+                                                <li>14</li>
+                                                <li>15</li>
+                                                <li>16</li>
+                                                <li>17</li>
+                                                <li>18</li>
+                                                <li>19</li>
+                                                <li>20</li>
+                                                <li>21</li>
+                                                <li>22</li>
+                                                <li>23</li>
+                                                <li>24</li>
+                                                <li>25</li>
+                                                <li>26</li>
+                                                <li>27</li>
+                                                <li>28</li>
+                                                <li>29</li>
+                                                <li>30</li>
+                                                <li>31</li>
+                                            </ul>
                                         </div>
                                         <div class="col-md-12">
                                             <hr class="hr">
@@ -331,8 +343,6 @@
                                             <span class="side-text">See All</span>
                                             <hr class="hr">
                                         </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col-md-12">
                                             <canvas id="myBarChart1"></canvas>
                                         </div>
@@ -349,8 +359,6 @@
                                             <span class="side-text">See All</span>
                                             <hr class="hr">
                                         </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col-md-12">
                                             <canvas id="myBarChart2"></canvas>
                                         </div>
@@ -476,10 +484,9 @@
         </div>
     </div>
 
-
-    <script src="assets/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    </script><script src="assets/js/index.js"></script>
 </body>
 
 </html>
