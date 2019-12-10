@@ -26,7 +26,6 @@ $(function () {
 
 });
 
-
 function makePie(id, data) {
     let myChart = document.getElementById(id).getContext('2d');
     let massPopChart = new Chart(myChart, {
