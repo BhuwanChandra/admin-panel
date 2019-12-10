@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-2 col-md-3">
+            <div class="company">
+                <div class="title">SKOOKUM</div>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-9">
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="padding: 5px;">
+                <div class="container">
+                    <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+                        <span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <form class="form-inline mr-auto" target="_self">
+                            <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input
+                                    type="search" class="form-control search-field" id="search-field" placeholder="SEARCH CONTENT"
+                                    name="search" /></div>
+                        </form>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" style="font-size:12px;color:#ccc;margin-top:20px;margin-right:20px;"
+                                role="presentation">
+                                <span class="numbers">14</span><br>
+                                <span style="padding-left: 6px;">alerts</span>
+                            </li>
+                            <li class="nav-item" style="font-size:12px;color:#ccc;" role="presentation">
+                                <label class="switch" style="top: 8px;margin: 6px 0;">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round">ON</span>
+                                </label><br>
+                                <span style="padding-left: 6px;">Live Chat</span>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#">
+                                    <img class="img-fluid round-img" src="assets/img/girl1.jpg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row main-content">
+        <!-- <div class="sidebar"> -->
+            <div id="sidebar-collapse" class="col-md-3 col-lg-2 sidebar" style="padding: 0;" id="sidebar" class="col-sm-3 col-lg-2 sidebar">
+                <div class="company-t">
+                    <div class="title">SKOOKUM</div>
+                </div>
+                <ul class="nav menu">
+                    <li class="nav-items-t">
+                        <ul class="d-flex ml-3 mr-3 pr-3" style="align-items:center;background: transparent;">
+                            <li class="nav-item" style="font-size:14px;color:#ccc;margin-top:20px;" role="presentation">
+                                <span class="numbers ml-2">14</span><br>
+                                <span style="padding-left: 6px;">alerts</span>
+                            </li>
+                            <li class="nav-item" style="font-size:12px;color:#ccc;" role="presentation">
+                                <label class="switch" style="top: 8px;margin: 6px 0;">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round">ON</span>
+                                </label><br>
+                                <span style="padding-left: 6px;">Live Chat</span>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#">
+                                    <img class="round-img" src="assets/img/girl1.jpg">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar navigation-clean-search nav-items-t" style="background:transparent;">
+                        <form class="form-inline" target="_self">
+                            <div class="form-group d-flex" style="flex-wrap:initial;"><label for="search-field"><i
+                                        class="fa fa-search"></i></label>
+                                <input type="search" class="form-control search-field" id="search-field" placeholder="SEARCH CONTENT"
+                                    name="search" /></div>
+                        </form>
+                    </li>
+                    <li class="parent "><a href="#"><em class="fa fa-dashboard">&nbsp;</em> Dashboard
+                        <span data-toggle="collapse" href="#sub-dash-1"
+                                class="icon pull-right"><em class="fa fa-angle-right"></em></span>
+                        </a>
+                        <ul class="children collapse" id="sub-dash-1">
+                            <li><a class="" href="#">
+                                    <span class="fa fa-long-arrow-down">&nbsp;</span> Queue
+                                    <span class="float-right numbers">1</span>
+                                </a></li>
+                            <li><a class="" href="#">
+                                    <span class="fa fa-comments">&nbsp;</span> Messages
+                                    <span class="float-right numbers">13</span>
+                                </a></li>
+                            <li><a class="" href="#">
+                                    <span class="fa fa-pie-chart">&nbsp;</span> Reports
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><em class="fa fa-paint-brush">&nbsp;</em> Theme
+                            <span data-toggle="collapse" href="#sub-theme-1" class="icon pull-right"><em class="fa fa-angle-right"></em></span>
+                        </a></li>
+                    <li><a href="#"><em class="fa fa-edit">&nbsp;</em> Edit Content
+                            <span data-toggle="collapse" href="#sub-edit-1" class="icon pull-right"><em class="fa fa-angle-right"></em></span>
+                        </a></li>
+                    <li><a href="#"><em class="fa fa-wrench">&nbsp;</em> Tools
+                            <span data-toggle="collapse" href="#sub-tools-1" class="icon pull-right"><em class="fa fa-angle-right"></em></span>
+                        </a></li>  
+                </ul>
+            </div>
+        <!-- </div> -->
+        <div class="content col-md-9 col-lg-10 p-2">
+            <!-- <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="padding: 5px;">
+                <div class="container">
+                    <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#sidebar-collapse"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <form class="form-inline mr-auto" target="_self">
+                            <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label><input type="search" class="form-control search-field" id="search-field" placeholder="SEARCH CONTENT" name="search" /></div>
+                        </form>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" style="font-size:12px;color:#ccc;margin-top:20px;margin-right:20px;" role="presentation">
+                                <span class="numbers">14</span><br>
+                                <span style="padding-left: 6px;">alerts</span>
+                            </li>
+                            <li class="nav-item" style="font-size:12px;color:#ccc;" role="presentation">
+                                <label class="switch" style="top: 8px;margin: 6px 0;">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round">ON</span>
+                                </label><br>
+                                <span style="padding-left: 6px;">Live Chat</span>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" href="#">
+                                    <img class="img-fluid round-img" src="assets/img/girl1.jpg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="row queue-row">
+                            <div class="col-md-12" style="padding: 15px 15px;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <i class="fa fa-arrow-down"></i>
+                                        <span class="col-head">Queue</span>
+                                        <span class="side-text">See All</span>
+                                        <hr class="hr">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="sb-head">New applications in progress</span><br><br>
+                                        <div style="display: flex;padding:15px 0;">
+                                            <img class="img-fluid round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                            <div class="application-text">
+                                                <p class="main-name">Tyler Walker</p>
+                                                <p class="sb-name">23 out of 36 steps completed</p>
+                                            </div>
+                                            <div class="pie-chart ml-auto"><canvas id="myChart1"></canvas></div>
+                                        </div>
+                                        <div style="display: flex;padding:15px 0;">
+                                            <img class="img-fluid round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                            <div class="application-text">
+                                                <p class="main-name">Danielle Pierce</p>
+                                                <p class="sb-name">11 out of 36 steps completed</p>
+                                            </div>
+                                            <div class="pie-chart ml-auto"><canvas id="myChart2"></canvas></div>
+                                        </div>
+                                        <div style="display: flex;padding:15px 0;">
+                                            <img class="img-fluid round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                            <div class="application-text">
+                                                <p class="main-name">Cythia Allen</p>
+                                                <p class="sb-name">18 out of 36 steps completed</p>
+                                            </div>
+                                            <div class="pie-chart ml-auto"><canvas id="myChart3"></canvas></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 pl-2">
+                                        <span class="sb-head">New applications submitted</span><br><br>
+                                        <div style="display: flex;padding:15px 0;">
+                                            <img class="img-fluid round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                            <div class="application-text">
+                                                <p class="main-name">Jerry Washington</p>
+                                                <p class="sb-name">36 out of 36 steps completed</p>
+                                            </div>
+                                            <div class="pie-chart ml-auto"><i class="fa fa-check"></i></div>
+                                        </div>
+                                        <div style="display: flex;padding:15px 0;">
+                                            <img class="img-fluid round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                            <div class="application-text">
+                                                <p class="main-name">Jerry Washington</p>
+                                                <p class="sb-name">36 out of 36 steps completed</p>
+                                            </div>
+                                            <div class="pie-chart ml-auto"><i class="fa fa-check"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                    <div class="row calender">
+                                        <div class="col-md-12">
+                                            <i class="fa fa-clock-o" style="background: #920ecf;"></i>
+                                            <span class="col-head">Calender</span>
+                                            <hr class="hr">
+                                        </div>
+                                        <div class="col-md-12">
+                                            
+
+<div class="month">
+    <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>
+            October
+        </li>
+    </ul>
+</div>
+
+<ul class="weekdays">
+    <li>M</li>
+    <li>T</li>
+    <li>W</li>
+    <li>T</li>
+    <li>F</li>
+    <li>S</li>
+    <li>S</li>
+</ul>
+
+<ul class="days">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+    <li>31</li>
+</ul>
+
+
+
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <hr class="hr">
+                                            <div style="display: flex;padding:15px 0;">
+                                                <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                                <div class="application-text">
+                                                    <p class="main-name">Jerry Washington</p>
+                                                    <p class="sb-name">Oct 1, 2016 . 10:00am . 11:00am</p>
+                                                </div>
+                                                <i class="fa fa-circle ml-auto mt-3" style="color: #3fc9ff;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div style="display: flex;padding:15px 0;">
+                                                <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                                <div class="application-text">
+                                                    <p class="main-name">Jerry Washington</p>
+                                                    <p class="sb-name">Oct 1, 2016 . 10:00am . 11:00am</p>
+                                                </div>
+                                                <i class="fa fa-circle ml-auto mt-3" style="color: #5c0ac7;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div style="display: flex;padding:15px 0;">
+                                                <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                                <div class="application-text">
+                                                    <p class="main-name">Jerry Washington</p>
+                                                    <p class="sb-name">Oct 1, 2016 . 10:00am . 11:00am</p>
+                                                </div>
+                                                <i class="fa fa-circle ml-auto mt-3" style="color: #5c0ac7;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div style="display: flex;padding:15px 0;">
+                                                <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg">
+                                                <div class="application-text">
+                                                    <p class="main-name">Jerry Washington</p>
+                                                    <p class="sb-name">Oct 1, 2016 . 10:00am . 11:00am</p>
+                                                </div>
+                                                <i class="fa fa-circle ml-auto mt-3" style="color: #3fc9ff;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <div class="new-applications">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <i class="fa fa-pie-chart" style="background: #79d60e;"></i>
+                                            <span class="col-head">New Applications</span>
+                                            <span class="side-text">See All</span>
+                                            <hr class="hr">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <canvas id="myBarChart1"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-text mt-3">
+                                        <i class="fa fa-circle mr-2" style="color: #79d60e;"></i> Aplications Initiated (7 days)
+                                    </div>
+                                </div>
+                                <div class="comp-applications">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <i class="fa fa-pie-chart" style="background: #3fc9ff;"></i>
+                                            <span class="col-head">Completed Applications</span>
+                                            <span class="side-text">See All</span>
+                                            <hr class="hr">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <canvas id="myBarChart2"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-text mt-3">
+                                        <i class="fa fa-circle mr-2" style="color: #3fc9ff;"></i> Aplications Finished (7 days)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="pinned-msg">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <i class="fa fa-thumb-tack" style="background: #5c0ac7;"></i>
+                                    <span class="col-head">Pinned Messages</span>
+                                    <hr class="hr">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div style="display: flex;padding:15px 0;">
+                                        <div>
+                                            <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg"><br>
+                                            <i class="fa fa-check mt-3 sm-icon"></i><br>
+                                            <i class="fa fa-share mt-3 sm-icon" style="transform:rotateY(180deg);"></i>
+                                        </div>
+                                        <div class="application-text">
+                                            <p class="main-name">Cythia Allen<span class="side-date">jul 12, 2018</span></p><br>
+                                            <div>
+                                                <p class="sb-name" style="font-size:14px;">Hey,</p>
+                                                <p class="sb-name" style="font-size:14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit dignissimos aut illo. Nihil impedit cupiditate, nisi dolorum exercitationem inventore quo, suscipit fugit ipsam cumque provident! Eum, modi doloribus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <hr class="hr">
+                                    <div style="display: flex;padding:15px 0;">
+                                        <div>
+                                            <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg"><br>
+                                            <i class="fa fa-check mt-3 sm-icon"></i><br>
+                                            <i class="fa fa-share mt-3 sm-icon" style="transform:rotateY(180deg);"></i>
+                                        </div>
+                                        <div class="application-text">
+                                            <p class="main-name">Allen Smythe<span class="side-date">jul 12, 2018</span></p><br>
+                                            <div>
+                                                <p class="sb-name" style="font-size:14px;">Hey,</p>
+                                                <p class="sb-name" style="font-size:14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil impedit cupiditate, nisi dolorum exercitationem</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recent-msg">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <i class="fa fa-comments" style="background: #e49c18;"></i>
+                                    <span class="col-head">Recent Messages</span>
+                                    <hr class="hr">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div style="display: flex;padding:15px 0;">
+                                        <div>
+                                            <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg"><br>
+                                            <i class="fa fa-check mt-3 sm-icon"></i><br>
+                                            <i class="fa fa-share mt-3 sm-icon" style="transform:rotateY(180deg);"></i>
+                                        </div>
+                                        <div class="application-text">
+                                            <p class="main-name">Cythia Allen<span class="side-date">jul 12, 2018</span></p><br>
+                                            <div>
+                                                <p class="sb-name" style="font-size:14px;">Hey,</p>
+                                                <p class="sb-name" style="font-size:14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Voluptatibus odit dignissimos aut illo. Nihil impedit cupiditate, nisi dolorum exercitationem
+                                                    inventore quo, suscipit fugit ipsam cumque provident! Eum, modi doloribus.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <hr class="hr">
+                                    <div style="display: flex;padding:15px 0;">
+                                        <div>
+                                            <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg"><br>
+                                            <i class="fa fa-check mt-3 sm-icon"></i><br>
+                                            <i class="fa fa-share mt-3 sm-icon" style="transform:rotateY(180deg);"></i>
+                                        </div>
+                                        <div class="application-text">
+                                            <p class="main-name">Allen Smythe<span class="side-date">jul 12, 2018</span></p><br>
+                                            <div>
+                                                <p class="sb-name" style="font-size:14px;">Hey,</p>
+                                                <p class="sb-name" style="font-size:14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Nihil impedit cupiditate, nisi dolorum exercitationem</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <hr class="hr">
+                                    <div style="display: flex;padding:15px 0;">
+                                        <div>
+                                            <img class="round-img" style="max-height:35px;" src="assets/img/girl1.jpg"><br>
+                                            <i class="fa fa-check mt-3 sm-icon"></i><br>
+                                            <i class="fa fa-share mt-3 sm-icon" style="transform:rotateY(180deg);"></i>
+                                        </div>
+                                        <div class="application-text">
+                                            <p class="main-name">Bruze Smythe<span class="side-date">jul 12, 2018</span></p><br>
+                                            <div>
+                                                <p class="sb-name" style="font-size:14px;">Hey,</p>
+                                                <p class="sb-name" style="font-size:14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Nihil impedit cupiditate.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
