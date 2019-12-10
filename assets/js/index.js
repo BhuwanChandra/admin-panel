@@ -26,6 +26,14 @@ $(function () {
 
 });
 
+function resize() {
+  if(window.innerHeight == window.screen.height){
+    window.location.reload();
+    console.log(resized);
+  }
+}
+window.onresize = resize;
+
 function makePie(id, data) {
     let myChart = document.getElementById(id).getContext('2d');
     let massPopChart = new Chart(myChart, {
