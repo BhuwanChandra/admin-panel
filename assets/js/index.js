@@ -27,9 +27,8 @@ $(function () {
 });
 
 function resize() {
-  if(window.innerHeight == window.screen.height){
-    window.location.reload();
-    console.log(resized);
+  if ($(window).width() >= 768) {
+    $("#sidebar-collapse").collapse("show");
   }
 }
 window.onresize = resize;
