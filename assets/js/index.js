@@ -33,8 +33,14 @@ $(document).ready(function (){
 })
 
 function resize() {
+  let c = 0;
   if ($(window).width() >= 768) {
     $("#sidebar-collapse").collapse("show");
+    c = 0;
+  }
+  if (($(window).width() < 768)&&(c==0)) {
+    $("#sidebar-collapse").collapse("hide");
+    c++;
   }
 }
 window.onresize = resize;
